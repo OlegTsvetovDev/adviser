@@ -1,5 +1,4 @@
-import { alpha } from '@material-ui/core'
-import { makeStyles } from '@material-ui/core';
+import { alpha, makeStyles } from '@material-ui/core';
 
 
 export default makeStyles(theme => ({
@@ -24,6 +23,7 @@ export default makeStyles(theme => ({
       marginLeft: theme.spacing(3),
       width: 'auto'
     },
+
   },
 
   searchIcon: {

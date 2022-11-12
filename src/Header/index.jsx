@@ -8,11 +8,12 @@ import useStyles from './styles'
 const Header = () => {
   const classes = useStyles()
 
-  const inputBaseClasses = `${classes.inputRoot}, ${classes.inputInput}`
+  // const inputBaseClasses = `${classes.inputRoot}, ${classes.inputInput}`
+  const inputBaseClasses = { root: classes.inputRoot, input: classes.inputInput }
 
   return (
     <AppBar position="static">
-      <Toolbar>
+      <Toolbar className={classes.toolbar}>
         <Typography variant="h5" className={classes.title}>
           TravelAdvisor
         </Typography>
@@ -20,14 +21,14 @@ const Header = () => {
           <Typography variant="h6" className={classes.title}>
             Explore new places
           </Typography>
-
+          {/*<Autocomplete>*/}
             <div className={classes.search}>
               <div className={classes.searchIcon}>
                 <SearchIcon />
               </div>
-              <InputBase placeholder="Search..." className={inputBaseClasses} />
+              <InputBase placeholder="Search..." classes={inputBaseClasses} />
             </div>
-
+          {/*</Autocomplete>*/}
         </Box>
       </Toolbar>
     </AppBar>
