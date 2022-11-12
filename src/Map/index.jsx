@@ -7,7 +7,7 @@ import useStyles from './styles'
 
 
 const bootstrapURLKeys = {
-  key: 'AIzaSyDcsOaCb0xilDlvfg3D7ppg_A43FpmJJVs'
+  key: ''
 }
 
 const googleMapCoords = {
