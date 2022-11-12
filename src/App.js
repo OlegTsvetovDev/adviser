@@ -1,6 +1,7 @@
 import React from 'react'
 import { CssBaseline, Grid } from '@material-ui/core'
 import Header from './Header'
+import Map from './Map'
 import './App.css'
 
 
@@ -9,7 +10,7 @@ const gridStyles = {
 }
 
 function App() {
-  
+
   return (
     <>
       <CssBaseline />
@@ -19,7 +20,7 @@ function App() {
           List
         </Grid>
         <Grid item xs={12} md={8} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-          Map
+          <Map />
         </Grid>
       </Grid>
     </>

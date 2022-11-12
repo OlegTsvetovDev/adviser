@@ -7,6 +7,10 @@ export default makeStyles(() => ({
     flexDirection: 'column',
     justifyContent: 'center',
     padding: '10px',
-    
+  },
+  mapContainer: {
+    display: 'flex',
+    minHeight: '100vh',
+    width: '100%',
   }
 }))
